@@ -10,17 +10,14 @@ function TodoApp(){
     }
 
     function addTodo(){
-
         if(newTodo.trim() !== ""){
             setTodos(t => [...t, newTodo]);
         }
-        
     }
 
     function deleteTodo(index){
         const updatedTodos = todos.filter((_, i) => i!==index);
         setTodos(updatedTodos)
-
     }
 
     function moveTodoUp(index){
@@ -29,7 +26,6 @@ function TodoApp(){
             [updatedTodos[index], updatedTodos[index-1]] =
             [updatedTodos[index-1], updatedTodos[index]]
             setTodos(updatedTodos);
-
         }
     }
 
@@ -40,7 +36,6 @@ function TodoApp(){
             [updatedTodos[index+1], updatedTodos[index]]
             setTodos(updatedTodos);
         }
-
     }
 
     return<>
@@ -58,7 +53,7 @@ function TodoApp(){
             
             <div className="todos-container">
                 <ol>
-                    {
+                    {todos.length < 1 ? <h1 className="info-msg">Looks empty...</h1> :
                     todos.map((todo, index) =>
                         <li key={index}>
                             <span className="text">{todo}</span>
@@ -82,9 +77,9 @@ function TodoApp(){
                             </button>
                         </li>)
                     }    
-                </ol>
-
+                </ol> 
             </div>
+
         </div>
     </>
 }

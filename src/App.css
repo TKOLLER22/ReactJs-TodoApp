@@ -23,8 +23,6 @@ html{
     min-height: 200px;
     height: fit-content;
     background-color: hsl(271, 76%, 50%);
-    
-    
 }
 
 .header-container{
@@ -66,15 +64,20 @@ html{
     margin-top: -10px;
     border-radius: 15px 15px 13px 13px;
     height: fit-content;
-    min-height: 6px;
+    min-height: 100px;
 }
 
 ol{
     padding: 0px;
 }
 
+.info-msg{
+    text-align: center;
+    color: white;
+}
+
 li{
-    color: transparent;
+    list-style: none;
     margin-bottom: 5px;
     display: flex;
     align-items: center;
@@ -96,32 +99,24 @@ li>button{
 
 .delete-button{
     background-color: hsl(0, 100%, 50%);
-
 }
 
 .moveUp-button{
     background-color: hsl(240, 88%, 60%);
-    
 }
 
 .moveDown-button{
     background-color: hsl(240, 88%, 60%);
-
-    
 }
 
 .delete-button:hover{
     background-color: hsl(0, 100%, 40%);
-
 }
 
 .moveUp-button:hover{
     background-color: hsl(240, 88%, 40%);
-    
 }
 
 .moveDown-button:hover{
     background-color: hsl(240, 88%, 40%);
-
-    
 }
