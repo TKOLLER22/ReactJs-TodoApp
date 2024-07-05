@@ -53,7 +53,7 @@ function TodoApp(){
             
             <div className="todos-container">
                 <ol>
-                    {todos.length < 1 ? <h1 className="info-msg">Looks empty...</h1> :
+                    {todos.length < 1 ? <h1 className="info-msg"><i>Looks empty...</i></h1> :
                     todos.map((todo, index) =>
                         <li key={index}>
                             <span className="text">{todo}</span>

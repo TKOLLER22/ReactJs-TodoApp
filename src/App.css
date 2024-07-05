@@ -4,7 +4,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 html{
     height: 100vh;
     width: 100vw;
@@ -12,77 +11,69 @@ html{
     justify-content: center;
     align-items: center;
     font-family: system-ui, -apple-system;
-    background-color: hsl(0, 0%, 10%);
+    background-color: hsl(0, 0%, 15%);
 }
-
-
 .app-container{
-    border: 2px solid rgb(255, 255, 255);
+    border: 5px solid hsl(0, 0%, 0%);
     border-radius: 15px;
     width: 350px;
     min-height: 200px;
     height: fit-content;
-    background-color: hsl(271, 76%, 50%);
+    background-color: hsl(51, 100%, 50%);
 }
-
 .header-container{
     font-size: 2rem;
     display: flex;
     justify-content: center;
     margin: 5px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: black;
 }
-
 .input-container{
     display: flex;
     justify-content: center;
     font-size: 1rem;
-    background-color: hsl(271, 76%, 40%);
+    background-color: hsl(51, 100%, 40%);
     border-radius: 15px 15px 0px 0px;
-    padding: 20px;
+    padding: 20px 0px 25px 0px;
 }
-
 .input-container > input, button{
     font-size: 1rem;
     margin: 2px;
     padding: 0px 3px;
+    border-radius: 5px;
+    border: none;
 }
-
 .input-container > button{
     text-decoration: none;
     border: none;
+    padding: 5px 5px;
     cursor: pointer;
     background-color: green;
     color: white;
     font-weight: 600;
 }
-
 .todos-container{
-    background-color: hsl(271, 76%, 30%);
+    background-color: hsl(51, 100%, 30%);
     padding: 20px;
     margin-top: -10px;
-    border-radius: 15px 15px 13px 13px;
+    border-radius: 15px 15px 10px 10px;
     height: fit-content;
     min-height: 100px;
 }
-
 ol{
     padding: 0px;
 }
-
 .info-msg{
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
-
 li{
     list-style: none;
     margin-bottom: 5px;
     display: flex;
     align-items: center;
 }
-
 li>button{
     padding: 2px 3px;
     margin: 3px;
@@ -91,32 +82,25 @@ li>button{
     border-radius: 3px;
     font-weight: 600;
 }
-
 .text{
-    color: white;
+    color: rgb(0, 0, 0);
     flex: 1;
 }
-
 .delete-button{
     background-color: hsl(0, 100%, 50%);
 }
-
 .moveUp-button{
     background-color: hsl(240, 88%, 60%);
 }
-
 .moveDown-button{
     background-color: hsl(240, 88%, 60%);
 }
-
 .delete-button:hover{
     background-color: hsl(0, 100%, 40%);
 }
-
 .moveUp-button:hover{
     background-color: hsl(240, 88%, 40%);
 }
-
 .moveDown-button:hover{
     background-color: hsl(240, 88%, 40%);
 }
